@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<meta charset="UTF-8">
+		<title>Tela de Login</title>
+		
+		<link rel="stylesheet" href="style_login.css">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<main style="display: flex;">
+			<div class="left-image" style="flex-basis: 50%;">	
+				<img src="imagens/login.png" alt="Imagem da tela de login" style="width: 110%;" >
+			</div>
+			<div class="form-container">
+				<h1>Login</h1>
+				<form>
+					<label for="username">Usuário</label> <!-- Rótulo --> 
+					<input type="text" id="username" name="username" required> <!-- Entrada do campo -->
+					<label for="password">Senha</label>
+					<input type="password" id="password" name="password" required>
+					<a href="candidato.html"><button type="submit">Entrar</button></a> <!-- navegar pelas páginas-->
+					
+					<p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

@@ -1,16 +1,24 @@
 body {
-    background-color: #1A9DF1;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     font-size: 24px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 
 }
 
 header {
-    height: 10px;
-    padding: 70px;
+    background-color: #0b023a;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 nav ul {
@@ -26,9 +34,9 @@ nav li {
 }
 
 nav a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
 }
 
 .login-buttons {
@@ -47,3 +55,8 @@ nav a {
     margin-left: 10px;
     margin-right: 20px;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+

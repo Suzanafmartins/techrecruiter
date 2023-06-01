@@ -10,7 +10,72 @@
 		<link rel="stylesheet" href="style_login.css">
 		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 	</head>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<meta charset="UTF-8">
+		<title>Tela de Login</title>
+		
+		<link rel="stylesheet" href="style_login.css">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	</head>
 
+	<body>
+		<header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">XXXXXXXX</a></li>
+                    <li><a href="#">XXXXXXXX</a></li>
+                </ul>
+            </nav>
+        </header>
+
+		<main style="display: flex;">
+			<div class="left-image" style="flex-basis: 50%;">	
+				<img src="imagens/login.png" alt="Imagem da tela de login" style="width: 110%;" >
+			</div>
+			<div class="form-container">
+				<h1>Login</h1>				
+				<form>
+					<label for="username">Usuário</label> <!-- Rótulo --> 
+					<input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>	
+					<div class="error" id="email-required-error" style="display: none;">Email é obrigatório</div>
+            		<div class="error" id="email-invalid-error" style="display: none;">Email é inválido</div>
+
+					<label for="password">Senha</label>
+					<input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+					<div class="error" id="password-required-error" style="display: none;">Senha é obrigatória</div>
+					
+					<button type="button" class="solid" id="login-button" disabled onclick="login()">Entrar</button>
+					
+					<p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+				</form>
+			</div>
+		</main>
+	</body>
+	
+	<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-database.js"></script>
+    <script src="validacao.js"></script>
+    <script src="login.js"></script>
+	<script>
+		const firebaseConfig = {
+			apiKey: "AIzaSyDBwGMLzdng5JYgfzaSWZ56jnO64nNjrgg",
+			authDomain: "techrecruiter-866d5.firebaseapp.com",
+			projectId: "techrecruiter-866d5",
+			storageBucket: "techrecruiter-866d5.appspot.com",
+			messagingSenderId: "1027425469353",
+			appId: "1:1027425469353:web:c09e7854be1a761d2c7ab8"
+		};
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+</html>
 	<body>
 		<header>
             <nav>
